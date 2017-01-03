@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Title -->
+    
+    <title>
+        Dii
+    </title>
+    
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" sizes="192x192" href="/img/favicon.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
+    
+    <!-- Meta & INfo -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0097A7">
+    <meta name="author" content="Dii">
+    <meta name="description" content="null">
+    <meta name="keywords" content="null">
+    
+    <!--iOS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-title" content="Title">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="480">
+    
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Dii">
+    
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="http://yoursite.com">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Dii">
+    <meta property="og:description" content="null">
+    
+     <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+        
+        
+            <script src="/js/ie-blocker.zhCN.js"></script>
+        
+    <![endif]-->
+    
+    <!-- Import CSS -->
+    <link rel="stylesheet" href="/css/material.min.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- Config CSS -->
+
+
+<!-- Other Styles -->
+<style>
+	body, html{
+		font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+	}
+	
+    a{
+        color: #00838F
+    }
+    
+    .mdl-card__media,
+    #search-label,
+    #search-form-label:after,
+    #scheme-Paradox .hot_tags-count,
+    #scheme-Paradox .sidebar_archives-count,
+    #scheme-Paradox .sidebar-colored .sidebar-header,
+    #scheme-Paradox .sidebar-colored .sidebar-badge{
+        background-color: #0097A7 !important
+    }
+    
+	/* Sidebar User Drop Down Menu Text Color */
+	#scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+    #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus{
+        color: #0097A7 !important
+    }
+    
+    #post_entry-right-info,
+    .sidebar-colored .sidebar-nav li:hover > a,
+    .sidebar-colored .sidebar-nav li:hover > a i,
+    .sidebar-colored .sidebar-nav li > a:hover,
+    .sidebar-colored .sidebar-nav li > a:hover i,
+    .sidebar-colored .sidebar-nav li > a:focus i,
+    .sidebar-colored .sidebar-nav > .open > a,
+    .sidebar-colored .sidebar-nav > .open > a:hover,
+    .sidebar-colored .sidebar-nav > .open > a:focus,
+    #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a{
+        color: #0097A7 !important
+    }
+    
+    .toTop{
+        background: #757575 !important
+    }
+		
+	.material-layout .material-post>.material-nav,
+	.material-layout .material-index>.material-nav,
+	.material-nav a{
+		color: #757575;
+	}
+		
+	#scheme-Paradox .MD-burger-layer {
+		background-color: #757575;
+	}
+
+	#scheme-Paradox #post-toc-trigger-btn{
+		color: #757575;
+	}
+	
+	.post-toc a:hover{
+		color: #00838F;
+		text-decoration: underline;
+	}
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+        body{
+            background-color: #F5F5F5
+        }
+		
+		/* blog_info bottom background */
+        #scheme-Paradox .material-layout .something-else .mdl-card__supporting-text{
+            background-color: #fff;
+        }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+        .fade {
+            transition: all 800ms linear;
+            -webkit-transform: translate3d(0,0,0);
+            -moz-transform: translate3d(0,0,0);
+            -ms-transform: translate3d(0,0,0);
+            -o-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+            opacity: 1;
+        }
+
+        .fade.out{
+            opacity: 0;
+        }
+    </style>
+
+	<script src="/js/jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="/css/highlight/solarized-white.css">
+	
+	<!-- UC Browser Compatible-->
+	<script>
+		var agent = navigator.userAgent.toLowerCase();
+		if(agent.indexOf('ucbrowser')>0) {
+			document.write('<link rel="stylesheet" href="/css/uc.css">');
+		   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+		}
+	</script>
+    
+    <!-- Custom Head -->
+    
+</head>
+	
+	
+
+    <body id="scheme-Paradox">
+
+		
+        <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+				
+			
+			
+            <!-- Main Container -->
+            <main class="material-layout__content" id="main">
+				
+                <!-- Top Anchor -->
+                <div id="top"></div>
+				
+				
+                <!-- Hamburger Button -->
+                <button class="MD-burger-icon sidebar-toggle">
+                    <span class="MD-burger-layer"></span>
+                </button>
+				
+				
+                <!-- Post TOC -->
+
+    
+	<!-- Back Button -->
+<!--
+	<div class="material-back" id="backhome-div" tabindex="0">
+		<a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="#" onclick="window.history.back();return false;" target="_self" role="button" data-upgraded=",MaterialButton,MaterialRipple">
+			<i class="material-icons" role="presentation">arrow_back</i>
+			<span class="mdl-button__ripple-container">
+				<span class="mdl-ripple"></span>
+			</span>
+		</a>
+	</div>			
+-->
+	<!-- Left aligned menu below button -->
+	<button id="post-toc-trigger-btn"
+			class="mdl-button mdl-js-button mdl-button--icon">
+	  <i class="material-icons">format_list_numbered</i>
+	</button>
+
+	<ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect"
+		for="post-toc-trigger-btn">
+			
+			<ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#CommonsChunkPlugin"><span class="post-toc-number">1.</span> <span class="post-toc-text">CommonsChunkPlugin</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#name-names"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">name|names</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#filename"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">filename</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#minChunks"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">minChunks</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#chunks"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">chunks</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#children"><span class="post-toc-number">1.5.</span> <span class="post-toc-text">children</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#async"><span class="post-toc-number">1.6.</span> <span class="post-toc-text">async</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#minSize"><span class="post-toc-number">1.7.</span> <span class="post-toc-text">minSize</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#官网案例"><span class="post-toc-number">2.</span> <span class="post-toc-text">官网案例</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Commons-chunk-for-entries"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">Commons chunk for entries</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-Move-common-modules-into-the-parent-chunk"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">2. Move common modules into the parent chunk</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#name"><span class="post-toc-number">2.2.0.0.1.</span> <span class="post-toc-text">name:</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#⚠️children"><span class="post-toc-number">2.2.0.0.2.</span> <span class="post-toc-text">⚠️children:</span></a></li></ol></li></ol></li></ol></li></ol></li></ol>
+		
+<!--			<li class="mdl-menu__item">Some Action</li>-->
+	</ul>
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+		
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+	<!-- Paradox Post Header -->
+	
+		
+			<!-- Random Thumbnail -->
+			<div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+				<script>
+    
+    var randomNum;
+    randomNum = Math.floor(Math.random() * 5 + 1);
+    
+    $(".post_thumbnail-random").css('background-image', 'url(' + 'undefined' + randomNum + '.png' + ')');
+    
+</script>
+
+		
+	
+        <p class="article-headline-p">
+            
+        </p>
+    </div>
+
+	
+
+				
+				
+					<!-- Paradox Post Info -->
+					<div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+    
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Dii</strong>
+        <span>1月 03, 2017</span>
+    </div>
+    
+    <div class="section-spacer"></div>
+	
+    <!-- Favorite -->
+<!--
+    <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+        <i class="material-icons" role="presentation">favorite</i>
+        <span class="visuallyhidden">favorites</span>
+    </button>
+-->
+    
+    <!-- Tags (bookmark) -->
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+    
+    
+    
+    
+    <!-- Share Twitter -->
+    <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://yoursite.com//2017/01/03/CommonsChunkPlugin/index.html&via=Dii" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Twitter
+        </li>
+    </a>
+    
+    <!-- Share Google+ -->
+    <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/01/03/CommonsChunkPlugin/index.html" target="_blank">
+        <li class="mdl-menu__item">
+            分享到 Google+
+        </li>
+    </a>
+    
+    <!-- Share Weibo -->
+    <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://yoursite.com//2017/01/03/CommonsChunkPlugin/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <li class="mdl-menu__item">
+            分享到微博
+        </li>
+    </a>
+</ul>
+</div>
+				
+
+                <!-- Post Content -->
+                <div id="post-content" class="markdown-Github mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+	
+		<h1 id="CommonsChunkPlugin"><a href="#CommonsChunkPlugin" class="headerlink" title="CommonsChunkPlugin"></a>CommonsChunkPlugin</h1><p>The available options are:</p>
+<pre><code>* [name: string](#jump)
+* names: string[]
+* filename: string
+* minChunks: number
+* chunks: string[]
+* children: boolean
+* async: boolean
+* [minSize: number](#minSize) 
+</code></pre><h2 id="name-names"><a href="#name-names" class="headerlink" title="name|names"></a>name|names</h2><p><span id="“name”">name</span></p>
+<blockquote>
+<p><strong>options.name or options.names (string|string[]):</strong> The chunk name of the commons chunk. An existing chunk can be selected by passing a name of an existing chunk. If an array of strings is passed this is equal to invoking the plugin multiple times for each chunk name. If omitted and options.async or options.children is set all chunks are used, otherwise options.filename is used as chunk name.  </p>
+</blockquote>
+<p>特征：</p>
+<pre><code>1. options.name(string),options.names(string[]);
+2. name属性设置公共chunk的chunk名称;
+3. 可以通过传递现有chunk的名称来选择现有块;
+4. 如果通过names传递一个字符串数组，这等于为每个块名称多次调用插件。
+5. 如果省略name属性并且设置了options.async或options.children那么所有的chunks都会被使用，否则使用options.filename作为块名。
+</code></pre><p>最后一点的意思比较难理解…<br>webpack1中，省略name属性有两种情况；</p>
+<pre><code>* 设置了options.async or options.children，这种情况所有的chunks都会被选中，具体的分析看下面的官网案例Move common modules into the parent chunk；
+* 不设置options.async or options.children，这种情况只能是下面的形式（传入字符串参数），第一个参数就是name，第二个参数是filename。而这里的name参数可以省略，省略之后chunk name和filename都会被设置成filesname。
+</code></pre><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">new CommonsChunkPlugin(name，filename),</div><div class="line">new CommonsChunkPlugin(filename),		//省略name</div></pre></td></tr></table></figure>
+<p>例：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">new webpack.optimize.CommonsChunkPlugin(&apos;commons.js&apos;),</div></pre></td></tr></table></figure></p>
+<p>运行结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">     Asset       Size  Chunks             Chunk Names</div><div class="line">commons.js    3.58 kB       6  [emitted]  commons.js</div><div class="line">|______________ 都为commons.js ______________|</div></pre></td></tr></table></figure></p>
+<p>webpack2中    ，上面的第二种情况会报错，并对错误给出了提示和例子：<br>现在CommonsChunkPlugin只支持单一参数：对象形式或字符串形式的chunk name。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">webpack2:报错</div><div class="line">&gt; Error: Deprecation notice: CommonsChunkPlugin now only takes a single argument. Either an options object *or* the name of the chunk.</div><div class="line">&gt; Example: if your old code looked like this:</div><div class="line">&gt;     new webpack.optimize.CommonsChunkPlugin(&apos;vendor&apos;, &apos;vendor.bundle.js&apos;)</div><div class="line">&gt; You would change it to:</div><div class="line">&gt;     new webpack.optimize.CommonsChunkPlugin(&#123; name: &apos;vendor&apos;, filename: &apos;vendor.bundle.js&apos; &#125;)</div></pre></td></tr></table></figure></p>
+<p>总结：无论是webpack1还是webpack2，在设置了children和async的时候，name|names属性可以省略，并表示选中了所有</p>
+<hr>
+<h2 id="filename"><a href="#filename" class="headerlink" title="filename"></a>filename</h2><blockquote>
+<p><strong>options.filename (string):</strong> The filename template for the commons chunk. Can contain the same placeholder as output.filename. If omitted the original filename is not modified (usually output.filename or output.chunkFilename).  </p>
+</blockquote>
+<p>特征：</p>
+<pre><code>1. 参数string；
+2. 用于设置公共chunk的文件名模板。可以包含与output.filename相同的占位符（意思是可以设置CommonsChunkPlugin中的filename和output中的filename相同）。
+3. 如果省略，原始文件名不会被修改（通常为output.filename或output.chunkFilename）。
+</code></pre><hr>
+<h2 id="minChunks"><a href="#minChunks" class="headerlink" title="minChunks"></a>minChunks</h2><blockquote>
+<p><strong>options.minChunks</strong> (number|Infinity|function(module, count) -&gt; boolean): The minimum number of chunks which need to contain a module before it’s moved into the commons chunk. The number must be greater than or equal 2 and lower than or equal to the number of chunks. Passing Infinity just creates the commons chunk, but moves no modules into it. By providing a function you can add custom logic. (Defaults to the number of chunks)  </p>
+</blockquote>
+<ul>
+<li>[ ] options.minChunks（number | Infinity | function（module，count） - &gt; boolean）：在移动到公共块之前需要包含一个模块的块的最小数量。该数字必须大于或等于2且小于或等于块的数量。传递无限只是创建公共块，但不移动模块。通过提供一个函数，你可以添加自定义逻辑。 （默认为块的数量）</li>
+</ul>
+<hr>
+<h2 id="chunks"><a href="#chunks" class="headerlink" title="chunks"></a>chunks</h2><blockquote>
+<p><strong>options.chunks (string[]):</strong> Select the source chunks by chunk names. The chunk must be a child of the commons chunk. If omitted all entry chunks are selected.  </p>
+</blockquote>
+<p>特征：</p>
+<pre><code>1. 按chunk名称选择源块。
+2. 选中的chunk会变成生成的common chunk的子节点。
+3. 如果省略，则选择所有entry chunk。
+</code></pre><hr>
+<h2 id="children"><a href="#children" class="headerlink" title="children"></a>children</h2><blockquote>
+<p><strong>options.children (boolean):</strong> If true all children of the commons chunk are selected  </p>
+</blockquote>
+<p>特征：</p>
+<pre><code>1. 如果设置为true，则选择这个chunk的所有子节点，提取公共模块，与name|names结合使用
+</code></pre><hr>
+<h2 id="async"><a href="#async" class="headerlink" title="async"></a>async</h2><blockquote>
+<p><strong>options.async (boolean|string):</strong> If true a new async commons chunk is created as child of options.name and sibling of options.chunks. It is loaded in parallel with options.chunks. It is possible to change the name of the output file by providing the desired string instead of true.  </p>
+</blockquote>
+<ul>
+<li>[ ] options.async（boolean | string）：如果为true，则会创建一个新的异步commons块，作为options.name的子节点和options.chunks的兄弟节点。 它与options.chunks并行加载。 可以通过提供所需的字符串而不是true来更改输出文件的名称。</li>
+</ul>
+<hr>
+<h2 id="minSize"><a href="#minSize" class="headerlink" title="minSize"></a>minSize</h2><p><span id="“minSize”">minSize</span></p>
+<blockquote>
+<p><strong>options.minSize (number):</strong> Minimum size of all common module before a commons chunk is created.  </p>
+</blockquote>
+<ul>
+<li>[ ] options.minSize（number）：创建公共块之前所有公共模块的最小大小。</li>
+</ul>
+<hr>
+<hr>
+<hr>
+<h1 id="官网案例"><a href="#官网案例" class="headerlink" title="官网案例"></a>官网案例</h1><h2 id="Commons-chunk-for-entries"><a href="#Commons-chunk-for-entries" class="headerlink" title="Commons chunk for entries"></a>Commons chunk for entries</h2><blockquote>
+<p>Generate an extra chunk, which contains common modules shared between entry points.  </p>
+</blockquote>
+<p>生成一个包含了入口点之间共享的公共模块的额外的chunk。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">new CommonsChunkPlugin(&#123;</div><div class="line">  name: &quot;commons&quot;,</div><div class="line">  // (the commons chunk name)</div><div class="line"></div><div class="line">  filename: &quot;commons.js&quot;,</div><div class="line">  // (the filename of the commons chunk)</div><div class="line"></div><div class="line">  // minChunks: 3,</div><div class="line">  // (Modules must be shared between 3 entries)</div><div class="line"></div><div class="line">  // chunks: [&quot;pageA&quot;, &quot;pageB&quot;],</div><div class="line">  // (Only use these entries)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>name：</p>
+<h2 id="2-Move-common-modules-into-the-parent-chunk"><a href="#2-Move-common-modules-into-the-parent-chunk" class="headerlink" title="2. Move common modules into the parent chunk"></a>2. Move common modules into the parent chunk</h2><blockquote>
+<p>With Code Splitting multiple child chunks of a chunk can have common modules. You can move these common modules into the parent (This reduces overall size, but has a negative effect on the initial load time. It can be useful if it is expected that a user need to download many sibling chunks).  </p>
+</blockquote>
+<p>使用代码拆分块的多个子块可以有公共模块。 您可以将这些公共模块移动到父级（这减少了总体大小，但对初始加载时间有负面影响。如果预期用户需要下载多个同级块，这将是有用的）。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">new CommonsChunkPlugin(&#123;</div><div class="line">  // names: [&quot;app&quot;, &quot;subPageA&quot;]</div><div class="line">  // (choose the chunks, or omit for all chunks)</div><div class="line"></div><div class="line">  children: true,</div><div class="line">  // (select all children of chosen chunks)</div><div class="line"></div><div class="line">  // minChunks: 3,</div><div class="line">  // (3 children must share the module before it&apos;s moved)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<p>这个案例中:</p>
+<h5 id="name"><a href="#name" class="headerlink" title="name:"></a>name:</h5><blockquote>
+<p>options.name or options.names (string|string[]):   </p>
+<ol>
+<li>The chunk name of the commons chunk.   </li>
+<li>An existing chunk can be selected by passing a name of an existing chunk.   </li>
+<li>If an array of strings is passed this is equal to invoking the plugin multiple times for each chunk name.   </li>
+<li>If omitted and options.async or options.children is set all chunks are used, otherwise options.filename is used as chunk name.  </li>
+</ol>
+</blockquote>
+<ol>
+<li>name是公共块的块名称，可以另外设置。 </li>
+<li>可以通过传递现有块的名称来选择现有块。 </li>
+<li>如果传递一个字符串数组，这等于为每个块名称多次调用插件。 </li>
+<li>如果省略并且options.async或options.children设置为所有块，则使用options.filename作为块名。</li>
+</ol>
+<h5 id="⚠️children"><a href="#⚠️children" class="headerlink" title="⚠️children:"></a>⚠️children:</h5><blockquote>
+<p>options.children (boolean): If true all children of the commons chunk are selected<br>如果设置了children: true,那么这个块的所有的所有child chunk都将被选择</p>
+</blockquote>
+<p>这里自己写一个案例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//a.js</div><div class="line">require.ensure([], function(require)&#123;</div><div class="line">    require(&apos;./a-1.js&apos;);</div><div class="line">&#125;,&apos;a1&apos;);</div><div class="line">require.ensure([], function(require)&#123;</div><div class="line">    require(&apos;./a-2.js&apos;);</div><div class="line">&#125;,&apos;a2&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//a-1.js</div><div class="line">var $ = require(&apos;jquery&apos;);</div><div class="line"></div><div class="line">$(&apos;#a1&apos;).on(&apos;click&apos;,function () &#123;</div><div class="line">    $(&apos;#info&apos;).text(&quot;a1&quot;);</div><div class="line">&#125;);</div><div class="line">console.log(&apos;a1&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//a-2.js</div><div class="line">var $ = require(&apos;jquery&apos;);</div><div class="line"></div><div class="line">$(&apos;#a2&apos;).on(&apos;click&apos;,function () &#123;</div><div class="line">    $(&apos;#info&apos;).text(&quot;a2&quot;);</div><div class="line">&#125;);</div><div class="line">console.log(&apos;a2&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">//b.js</div><div class="line">require.ensure([], function (require) &#123;</div><div class="line">    require(&apos;./b-1.js&apos;);</div><div class="line">&#125;, &apos;b1&apos;);</div><div class="line">require.ensure([], function (require) &#123;</div><div class="line">    require(&apos;./b-2.js&apos;);</div><div class="line">&#125;, &apos;b2&apos;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//b-1.js</div><div class="line">var moment = require(&apos;moment&apos;);</div><div class="line"></div><div class="line">var b1 = document.getElementById(&apos;b1&apos;);</div><div class="line">var info = document.getElementById(&apos;info&apos;);</div><div class="line">var time = moment().calendar();</div><div class="line">b1.addEventListener(&apos;click&apos;,function () &#123;</div><div class="line">    info.innerText = &quot;b1:&quot; + time;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">//b-2.js</div><div class="line">var moment = require(&apos;moment&apos;);</div><div class="line"></div><div class="line">var b2 = document.getElementById(&apos;b2&apos;);</div><div class="line">var info = document.getElementById(&apos;info&apos;);</div><div class="line">var time = moment().calendar();</div><div class="line">b2.addEventListener(&apos;click&apos;,function () &#123;</div><div class="line">    info.innerText = &quot;b2:&quot; + time;</div><div class="line">&#125;);</div></pre></td></tr></table></figure>
+<p><img src="CommonsChunkPlugin/3EC3C6E0-5372-445C-975E-4FF4630AA932.png" alt=""></p>
+<p>从这张图可以看出：</p>
+<ol>
+<li>使用CommonJS的方式异步加载模块。这里通过require.ensure来拆分代码，构建并将这里的模块添加到单独的chunk中。 这个新的chunk根据需要由webpack通过jsonp加载，。</li>
+<li>a-1 和 a-2 有公共的依赖jquery；b-1 和 b-2 有公共的依赖moment</li>
+<li>chunk a 是 chunk a1, chunk a2 这两个chunk的parent</li>
+<li>chunk a 和 chunk b 是 entry chunk,其他chunk的运行必须依赖于对应的entry chunk</li>
+</ol>
+<p>再来看webpack.config.js:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">//webpack.config.js</div><div class="line">var webpack = require(&apos;webpack&apos;);</div><div class="line"></div><div class="line">module.exports =</div><div class="line">&#123;</div><div class="line">    entry: &#123;</div><div class="line">        a: ‘./src/a.js&apos;,</div><div class="line">        b: &apos;./src/b.js&apos;,</div><div class="line">    &#125;,</div><div class="line">    output: &#123;</div><div class="line">        path: &apos;./dist&apos;,</div><div class="line">        filename: &apos;[name].bundle.js&apos;,</div><div class="line">        chunkFilename: &apos;[name].bundle.js&apos;,</div><div class="line">        publicPath: &apos;./dist/&apos;,</div><div class="line">    &#125;,</div><div class="line">    plugins: [</div><div class="line">            new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">                names: [&apos;a&apos;,&apos;b&apos;],</div><div class="line">                children: true,</div><div class="line">            &#125;),</div><div class="line">    ],</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<ol>
+<li>将a.js和b.js这两个文件设为entry，因为这两个文件在打包的时候会变成parent，而<strong>children</strong>的设置就是针对parent的child chunk的</li>
+<li>chunkFilename: 是未被列在entry中，却又需要被打包出来的文件命名配置。什么场景需要呢？我们项目就遇到过，在按需加载（异步）模块的时候，这样的文件是没有被列在entry中的；require.ensure() API的第三个参数是给这个模块命名。</li>
+<li>在CommonsChunkPlugin中设置names为[‘a’,’b’],并设置children：true，表示选中这两个chunk，并依次对这两个chunk执行插件，就是说会先选中chunk a，然后选择它的全部child chunk，并提取公共模块，再添加到了chunk a中。这就相当于先执行<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">    name: &apos;a&apos;,</div><div class="line">    children: true,</div><div class="line">&#125;),</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>这里name设置为a，公共模块当然也就添加到了chunk a中了，然后再执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">    name: &apos;b&apos;,</div><div class="line">    children: true,</div><div class="line">&#125;),</div></pre></td></tr></table></figure></p>
+<p>⚠️这里可以不设置name，会默认选中所有的chunks，再依次执行插件，这里[<strong>所有的chunks</strong>]指的是什么请往后面看</p>
+<p>结果：<br>在index.html中<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">&lt;div&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;a1&quot; value=&quot;a-1&quot;&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;a2&quot; value=&quot;a-2&quot;&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;b1&quot; value=&quot;b-1&quot;&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;b2&quot; value=&quot;b-2&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div id=&quot;info&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;./dist/a.bundle.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/a1.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/a2.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;script src=&quot;./dist/b.bundle.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/b1.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/b2.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure></p>
+<p>可以看到我们只加载了a.bundle.js和b.bundle.js</p>
+<p>在浏览器中运行：</p>
+<p><img src="CommonsChunkPlugin/22DBD5C4-0321-4718-93F3-BAEF7CA9EB6F.png" alt=""><br>可以看到浏览器自动加载了a1.bundle.js等js文件</p>
+<p>我们修改一下a.js<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">if (document.getElementById(&apos;a1&apos;)) &#123;</div><div class="line">    require.ensure([], function (require) &#123;</div><div class="line">        require(&apos;./a-1.js&apos;);</div><div class="line">    &#125;, &apos;a1&apos;);</div><div class="line">&#125;</div><div class="line"></div><div class="line">require.ensure([], function (require) &#123;</div><div class="line">    require(&apos;./a-2.js&apos;);</div><div class="line">&#125;, &apos;a2&apos;);</div></pre></td></tr></table></figure></p>
+<p>当页面中有id为a1的元素时，加载a1.bundle.js</p>
+<p>重新运行一下webpack，再刷新浏览器<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">&lt;div&gt;</div><div class="line">    &lt;!--&lt;input type=&quot;button&quot; id=&quot;a1&quot; value=&quot;a-1&quot;&gt;--&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;a2&quot; value=&quot;a-2&quot;&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;b1&quot; value=&quot;b-1&quot;&gt;</div><div class="line">    &lt;input type=&quot;button&quot; id=&quot;b2&quot; value=&quot;b-2&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;div id=&quot;info&quot;&gt;</div><div class="line">&lt;/div&gt;</div><div class="line">&lt;script src=&quot;./dist/a.bundle.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/a1.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/a2.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;script src=&quot;./dist/b.bundle.js&quot;&gt;&lt;/script&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/b1.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;!--&lt;script src=&quot;./dist/b2.bundle.js&quot;&gt;&lt;/script&gt;--&gt;</div><div class="line">&lt;/body&gt;</div></pre></td></tr></table></figure></p>
+<p>我们把id=‘a1’的元素注释掉，再观察浏览器，看到a1.bundle.js并没有被加载，这就做到了按需加载</p>
+<p><strong>所有的chunks</strong><br>再来解释下这里的所有的chunks，首先webpack会根据entry把对应的entry生成好，然后CommonsChunkPlugin再执行，所以这里的所有的chunks就指的是CommonschunkPlugin执行之前存在的所有chunks<br>我们修改上面a-1.js的代码，再进行一次分割<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">var $ = require(&apos;jquery&apos;);</div><div class="line"></div><div class="line">$(&apos;#a1&apos;).on(&apos;click&apos;,function () &#123;</div><div class="line">    $(&apos;#info&apos;).text(&quot;a1&quot;);</div><div class="line">&#125;);</div><div class="line">console.log(&apos;a1&apos;);</div><div class="line"></div><div class="line">require.ensure([], function (require) &#123;</div><div class="line">    require(&apos;./a-1-1.js&apos;);</div><div class="line">&#125;, &apos;a11&apos;);</div><div class="line">require.ensure([], function (require) &#123;</div><div class="line">    require(&apos;./a-1-2.js&apos;);</div><div class="line">&#125;, &apos;a12&apos;);</div></pre></td></tr></table></figure></p>
+<p>再增加两个文件a-1-1.js和 a-1-2.js，两个文件有公共模块<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//a-1-1.js</div><div class="line">var mustache = require(&apos;mustache&apos;);</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">//a-1-2.js</div><div class="line">var mustache = require(&apos;mustache&apos;);</div></pre></td></tr></table></figure>
+<p>进行分析<br><img src="CommonsChunkPlugin/77C53715-225C-49FA-B108-CB72A30AFDAD.png" alt=""><br>所有的chunks就指的是CommonsChunkPlugin执行之前生成的所有chunk（上面8个chunks）<br>可以看到a1是a11和a12的parent，a是a1和a2的parent，b是b1和b2的parent<br>在这里执行webpack，由于没有设置name属性，默认会选中所有的chunks，然后再分析它们的child chunk并提取公共模块，也因为这里选中了所有的chunks，CommonsChunkPlugin会遍历所有生成的的chunks，对每个chunk执行<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">          name: //选中的chunk的name,</div><div class="line">          children: true,</div><div class="line">   &#125;),</div></pre></td></tr></table></figure></p>
+<p>也就是说会把从选中的parent chunk的所有child chunk中提取的公共模块添加到这个parent chunk中。<br>看一下打包结果<br><img src="CommonsChunkPlugin/F609F94A-5D53-4E0A-9BF3-6C764E4B0798.png" alt=""><br>a1,a2,b1,b2的中的公共模块被提取到了它们的parent chunk（chunk a和chunk b）中<br>a11,a12中的公共模块被提取到了它们的parent chunk（chunk a1）中<br>这里可以设置filename，但必须是动态的，比如[name].js<br>因为入果写死（如commons.js），那么就会将多个资源文件添加到同一个文件中,显然会报错<br>当然如果name中传入了不存在的chunk name当然是打包失败，就会忽略它</p>
+<p>可以使用多个形同的plugin来进行更好的优化<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">plugins: [</div><div class="line">    new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">        // names: [&apos;a1&apos;,&apos;b1&apos;],</div><div class="line">        // name: &apos;c&apos;,</div><div class="line">        children: true,</div><div class="line">        filename:&apos;[name].js&apos;,</div><div class="line">    &#125;),</div><div class="line">    new webpack.optimize.CommonsChunkPlugin(&#123;</div><div class="line">        name:&apos;commons&apos;,</div><div class="line">        chunks:[&apos;a&apos;,&apos;b&apos;],</div><div class="line">        filename:&apos;commons.js&apos;,</div><div class="line">    &#125;),</div><div class="line">    // new webpack.optimize.CommonsChunkPlugin(&apos;commons&apos;,&apos;commons.js&apos;),</div><div class="line">],</div></pre></td></tr></table></figure></p>
+
+	
+	
+	
+	
+</div>
+				
+				
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用多说评论 -->
+    <link rel="stylesheet" href="/css/duoshuo.min.css">
+<style>
+    #ds-thread #ds-reset .ds-post-button{
+        background-color: #0097A7 !important;
+    }
+    #ds-wrapper #ds-reset .ds-icons-32{
+        background-color: #0097A7 !important;
+    }
+    #ds-reset .ds-highlight {
+        color: #0097A7 !important;
+    }
+</style>
+<div id="comments">
+    <!-- 多说评论框 start -->
+        <div class="ds-thread" 
+            data-thread-key="2017/01/03/CommonsChunkPlugin/" 
+            data-url="http://yoursite.com/2017/01/03/CommonsChunkPlugin/"
+            data-title=""></div>
+    <!-- 多说评论框 end -->
+</div>
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2016/12/15/test/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+        </div>
+    </div>
+
+				
+				
+					<!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay "></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored  sidebar-fixed-left" role="navigation">
+	<div id="sidebar-main">
+	    <!-- Sidebar Header -->
+		<div class="sidebar-header header-cover" style="background-image: url(/img/sidebar_header.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+    <i class="material-icons">clear_all</i>
+    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.png" alt="Dii's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        711706@gmail.com
+        <b class="caret"></b>
+    </a>
+</div>
+
+		<!-- Sidebar Navigation  -->
+		<ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+			
+                <li>
+                    <a href="zd711614@live.com" target="_blank" title="Email Me">
+						<i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    <li id="sidebar-first-li">
+        <a href="/" target="_self">
+            <i class="material-icons sidebar-material-icons">home</i>
+             主页
+        </a>
+    </li>
+
+    <!-- I'm Feeling Lucky -->
+<!--
+    <li class="dropdown">
+        <a href="" target="_self">
+            <i class="material-icons sidebar-material-icons">explore</i>
+             sidebar.imlucky
+        </a>
+    </li>
+-->
+
+	
+    <!-- Archives  -->
+    <li class="dropdown">
+        <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+            <i class="material-icons sidebar-material-icons">inbox</i>
+             归档
+            <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+            <li>
+            <a class="sidebar_archives-link" href="/archives/2017/01/">一月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/12/">十二月 2016<span class="sidebar_archives-count">2</span></a>
+        </ul>
+    </li>
+
+    <!-- Divider -->
+    <li class="divider"></li>
+
+
+    <!-- Pages  -->
+	
+
+    <!-- Article Numebr  -->
+    <li>
+        <a href="/archives">
+             文章总数
+             <span class="sidebar-badge">3</span>
+        </a>
+    </li>
+</ul>
+
+		<!-- Sidebar Divider -->
+		<div class="sidebar-divider"></div>
+
+		<!-- Sidebar Footer -->
+		<!-- 
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持。 :) 
+-->
+
+<!-- Theme Material -->
+<a href="https://github.com/viosey/hexo-theme-material"  class="sidebar-footer-text-a" target="_blank">
+	<div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		主题 - Material
+		<span class="sidebar-badge badge-circle">i</span>
+	</div>
+</a>
+
+<!-- Help & Support -->
+<!--
+<a href="mailto:hiviosey@gmail.com" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+		sidebar.help
+		<span class="mdl-button__ripple-container">
+			<span class="mdl-ripple"></span>
+		</span>
+	</div>
+</a>
+-->
+
+<!-- Feedback -->
+<!--
+<a href="https://github.com/viosey/hexo-theme-material/issues" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.feedback
+                    <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>
+-->
+
+<!-- Abount Theme -->
+<!--
+<a href="https://blog.viosey.com/index.php/Material.html" target="_blank" class="sidebar-footer-text-a">
+    <div class="sidebar-text mdl-button mdl-js-button mdl-js-ripple-effect sidebar-footer-text-div" data-upgraded=",MaterialButton,MaterialRipple">
+         sidebar.about_theme
+        <span class="mdl-button__ripple-container"><span class="mdl-ripple"></span></span></div>
+</a>-->
+
+	</div>
+    
+    <!-- Sidebar Sponsor -->
+    
+
+
+</aside>
+
+				
+				
+				
+					<!-- Footer Top Button -->
+					<div class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+				
+				
+				<!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+	
+	
+		<!-- Paradox Footer Left Section -->
+		<div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+    <a href="https://twitter.com/twitter" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-twitter.png);">
+        <span class="visuallyhidden">Twitter</span>
+    </button></a>
+    
+    
+    <!-- Facebook -->
+    
+    <a href="https://www.facebook.com/facebook" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-facebook.png);">
+        <span class="visuallyhidden">Facebook</span>
+    </button></a>
+    
+    
+    <!-- Google + -->
+    
+    <a href="https://www.google.com/" target="view_window"><button class="mdl-mini-footer--social-btn social-btn" style="background-image: url(/img/footer/footer_ico-gplus.png);">
+        <span class="visuallyhidden">Google Plus</span>
+    </button></a>
+    
+    
+    <!-- Weibo -->
+    
+    
+    
+    <!-- Instagram -->
+    
+    
+    
+    <!-- Tumblr -->
+    
+    
+    
+    <!-- Github -->
+    
+    
+</div>
+
+
+		<!--Copyright-->
+		<div id="copyright">Copyright&nbsp;©&nbsp;<script type="text/javascript">var fd = new Date();document.write(fd.getFullYear());</script>&nbsp;Dii</div>
+
+		<!-- Paradox Footer Right Section -->
+
+		<!-- 
+		I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+		It will not impact the appearance and can give developers a lot of support :)
+
+		很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+		它不会影响美观并可以给开发者很大的支持。 :) 
+		-->
+
+		<div class="mdl-mini-footer--right-section">
+			<div>
+				<div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+				<div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+			</div>
+		</div>
+	
+    
+</footer>
+                
+				<!-- Import File -->
+<script src="/js/highlight.min.js"></script>
+<script src="/js/js.min.js"></script>
+<script src="/js/nprogress.js"></script>
+
+<script type="text/javascript">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    
+    $('#nprogress .bar').css({
+        'background': '#FF4081'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #FF4081, 0 0 15px #FF4081'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#FF4081',
+        'border-left-color': '#FF4081'
+    });
+    
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+    <!-- 多说公共 js 代码 start -->
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:"dii0711"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = 'https://static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] 
+             || document.getElementsByTagName('body')[0]).appendChild(ds);
+        })();
+    </script>
+    <!-- 多说公共 js 代码 end -->
+
+
+
+
+<!-- Swiftye -->
+
+
+<!-- Local Search-->
+
+
+<!-- Window Load-->
+<script>
+    $(window).load(function() {
+        // Post_Toc parent position fixed
+        $(".post-toc-wrap").parent(".mdl-menu__container").css("position", "fixed");
+    });
+</script>
+
+<!-- MathJax Load-->
+
+            </main>
+        </div>
+		
+    </body>
+		
+	
+</html>
